@@ -1,0 +1,24 @@
+.vergota {
+  font-size: 3rem;
+  font-weight: bold;
+}
+@media (min-width: 768px) {
+  .vergota {
+    color: blue;
+  }
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+}
+
+.align {
+  display: flex;
+  justify-content: center;
+}
+
+.align ul{
+    color: red;
+    font-size: 3rem;
+}

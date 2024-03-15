@@ -1,0 +1,15 @@
+<h2>Hello {{ username }}</h2>
+<!-- @if(doesUserExists){
+
+<p>El usuario existe</p>
+}@else {
+<p class="vergota">pedazo de gato no esistis</p>
+} -->
+
+<div class="container">
+  <div class="align">@for(os of operatingSystems; track os.id){ 
+     <ul>
+        <li>{{os.name}}</li>
+     </ul>
+    }</div>
+</div>
