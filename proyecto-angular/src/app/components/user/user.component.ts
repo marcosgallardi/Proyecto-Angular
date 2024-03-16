@@ -10,5 +10,10 @@ import { Component } from '@angular/core';
 export class UserComponent {
   username: string = 'pedro porro';
   doesUserExists: boolean = false;
-  operatingSystems = [{ id: 'win', name: 'windows' },{ id: 'lin', name: 'linux' },{ id: 'deb', name: 'debian' }];
+  operatingSystems = [
+    { id: 'win', name: 'windows' },
+    { id: 'lin', name: 'linux' },
+    { id: 'deb', name: 'debian' },
+  ];
+  isEditable:boolean =true
 }
