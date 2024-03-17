@@ -10,5 +10,10 @@ import { UserComponent } from './components/user/user.component';
   styleUrl: './app.component.css',
 })
 export class AppComponent {
+  userOcupation: string = 'piripitiflautico';
   title: string = 'proyecto-angular';
+  mensajeDelHijo:string = ''
+  receiveEmission($event: string): void {
+    this.mensajeDelHijo = $event;
+  }
 }

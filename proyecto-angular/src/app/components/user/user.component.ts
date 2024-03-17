@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { OperativeSystem } from '../../../interfaces/operative-system';
 
 @Component({
   selector: 'app-user',
@@ -8,12 +9,21 @@ import { Component } from '@angular/core';
   styleUrl: './user.component.css',
 })
 export class UserComponent {
+  @Input() ocupations: string = '';
+  @Output() greet: EventEmitter<string> = new EventEmitter<string>();
   username: string = 'pedro porro';
   doesUserExists: boolean = false;
-  operatingSystems = [
+  operatingSystems:OperativeSystem[] = [
     { id: 'win', name: 'windows' },
     { id: 'lin', name: 'linux' },
     { id: 'deb', name: 'debian' },
   ];
-  isEditable:boolean =true
+  isEditable: boolean = true;
+
+  onMouseOver(osName: string): void {
+    console.log(osName);
+  }
+  emitToParent(): void {
+    this.greet.emit('soy tu hijastro');
+  }
 }

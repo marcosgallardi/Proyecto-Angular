@@ -1,4 +1,4 @@
-<h2>Hello {{ username }}</h2>
+<h2>Hello {{ username }} you are a {{ ocupations }}</h2>
 <!-- @if(doesUserExists){
 
 <p>El usuario existe</p>
@@ -10,9 +10,10 @@
   <div class="align">
     @for(os of operatingSystems; track os.id){
     <ul>
-      <li>{{ os.name }}</li>
+      <li (mouseover)="onMouseOver(os.name)">{{ os.name }}</li>
     </ul>
     }
   </div>
   <div class="editable" [contentEditable]="isEditable"></div>
+  <button (click)="emitToParent()">mensaje al padre</button>
 </div>

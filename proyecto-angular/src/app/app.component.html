@@ -5,5 +5,6 @@
   <app-user />
   } -->
 </section>
-<app-user />
+{{ mensajeDelHijo }}
+<app-user (greet)="receiveEmission($event)" [ocupations]="userOcupation" />
 <router-outlet />
