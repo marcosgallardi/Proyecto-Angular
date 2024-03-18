@@ -7,4 +7,25 @@
 </section>
 {{ mensajeDelHijo }}
 <app-user (greet)="receiveEmission($event)" [ocupations]="userOcupation" />
+<section class="position-coments">
+  <h2>Comments</h2>
+  @defer {
+  <app-comments />
+  }@placeholder {
+  <p>vergaison</p>
+  }@loading (minimum 2s){
+  <p>loading vergaison</p>
+  }
+  <!-- @defer (on viewport) {
+    esto hace que se muestre cuando lo que estamos difiriendo este listo.
+  } -->
+</section>
+<section>
+  <!-- carga de imagenes de forma dinamica y estatica (optimizandolas para mejorrendimiento) -->
+  <!-- modo estatico -->
+  <img ngSrc="" alt="">
+
+  <!-- modo dinamico  -->
+</section>
+
 <router-outlet />

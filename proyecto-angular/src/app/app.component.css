@@ -1,3 +1,9 @@
-.verguero{
-    color: red;
+.verguero {
+  color: red;
+}
+
+.position-coments {
+  display: flex;
+  justify-content: center;
+  padding: 5rem 0;
 }

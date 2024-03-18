@@ -1,4 +1,4 @@
 export interface OperativeSystem {
-    id:string
-    name:string
+  id: string;
+  name: string;
 }

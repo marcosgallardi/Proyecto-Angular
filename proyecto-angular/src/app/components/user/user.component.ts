@@ -13,7 +13,7 @@ export class UserComponent {
   @Output() greet: EventEmitter<string> = new EventEmitter<string>();
   username: string = 'pedro porro';
   doesUserExists: boolean = false;
-  operatingSystems:OperativeSystem[] = [
+  operatingSystems: OperativeSystem[] = [
     { id: 'win', name: 'windows' },
     { id: 'lin', name: 'linux' },
     { id: 'deb', name: 'debian' },
